@@ -28,7 +28,8 @@ def show_correct_stage():
 
 def show_loose(strings):
     (answers, name) = strings
-    st = '"{}" is wrong answer ;(. Correct answer was "{}".'.format(answers[0],answers[1])
+    center_part = ' is wrong answer ;(. Correct answer was '
+    st = '"{}"{}"{}".'.format(answers[0], center_part, answers[1])
     print(st)
     print('Let\'s try again, {}!'.format(name))
 
