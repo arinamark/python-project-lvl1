@@ -1,8 +1,10 @@
 #!env python
 
+
 from random import randint
 import prompt
 from brain_games.cli import set_username
+
 
 def if_even(number):
     return (number % 2 == 0)
@@ -36,13 +38,16 @@ def if_answer(params):
         return answer == correct
     return False 
 
+
 def correct_answer(num):
     if if_even(num):
         return 'yes'
     return 'no'
 
+
 def get_answer():
     return prompt.string('Your answer: ').rstrip().lower()
+
 
 def game_stage(params):
     (step, name) = params
@@ -61,6 +66,7 @@ def game_stage(params):
         params2 = (answers,name)
         show_loose(params2)
         game_stage((1, name))
+
 
 def start_game():
     name = set_username()
