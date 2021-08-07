@@ -8,10 +8,10 @@ from brain_games.cli import set_username
 
 def if_even(number):
     return (number % 2 == 0)
-    
+
 
 def gen_number(n):
-    return randint(1,n)
+    return randint(1, n)
 
 
 def show_number(n):
@@ -28,15 +28,15 @@ def show_correct_stage():
 
 def show_loose(strings):
     (answers, name) = strings
-    print('"{}" is wrong answer ;(. Correct answer was "{}".'.format(answers[0],answers[1]))
+    print('"{}" is wrong answer ;(. Correct answer was "{}".'.format(answers))
     print('Let\'s try again, {}!'.format(name))
 
 
 def if_answer(params):
     (answer, correct) = params
-    if(answer in ['yes','no']):
+    if(answer in ['yes', 'no']):
         return answer == correct
-    return False 
+    return False
 
 
 def correct_answer(num):
@@ -60,10 +60,10 @@ def game_stage(params):
             show_win(name)
         else:
             show_correct_stage()
-            params1 = (step+1, name)
+            params1 = (step + 1, name)
             game_stage(params1)
     else:
-        params2 = (answers,name)
+        params2 = (answers, name)
         show_loose(params2)
         game_stage((1, name))
 
