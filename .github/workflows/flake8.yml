@@ -30,8 +30,8 @@ jobs:
         run: pip install poetry
 
       # Runs a single command using the runners shell
-      - name: add flake8
-        run: poetry add --dev flake8
+      - name: poetry install
+        run: poetry install
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
