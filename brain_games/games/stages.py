@@ -1,5 +1,5 @@
 from brain_games.games.gen_questions import gen_questions
-from brain_games.cli import show_welcome, set_username, welcome_user
+from brain_games.cli import welcome_user
 
 
 def show_win(name):
