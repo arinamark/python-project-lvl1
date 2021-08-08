@@ -10,8 +10,19 @@ def if_even(number):
     return (number % 2 == 0)
 
 
+def if_answer(params):
+    (answer, correct) = params
+    if(answer in ['yes', 'no']):
+        return answer == correct
+    return False
+
+
 def gen_number(n):
     return randint(1, n)
+
+
+def get_answer():
+    return prompt.string('Your answer: ').rstrip().lower()
 
 
 def show_number(n):
@@ -34,21 +45,10 @@ def show_loose(strings):
     print('Let\'s try again, {}!'.format(name))
 
 
-def if_answer(params):
-    (answer, correct) = params
-    if(answer in ['yes', 'no']):
-        return answer == correct
-    return False
-
-
 def correct_answer(num):
     if if_even(num):
         return 'yes'
     return 'no'
-
-
-def get_answer():
-    return prompt.string('Your answer: ').rstrip().lower()
 
 
 def game_stage(params):
