@@ -11,5 +11,7 @@ def show_welcome(name):
 
 
 def welcome_user():
+    print("Welcome to the Brain Games!")
     user_name = set_username()
     show_welcome(user_name)
+    return user_name

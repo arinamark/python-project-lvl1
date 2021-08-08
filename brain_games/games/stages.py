@@ -1,5 +1,5 @@
 from brain_games.games.gen_questions import gen_questions
-from brain_games.cli import show_welcome, set_username
+from brain_games.cli import show_welcome, set_username, welcome_user
 
 
 def show_win(name):
@@ -43,7 +43,6 @@ def stages_logic(strings):
 
 
 def start_game(rule):
-    name = set_username()
-    show_welcome(name)
+    name = welcome_user()
     print(rule)
     return name

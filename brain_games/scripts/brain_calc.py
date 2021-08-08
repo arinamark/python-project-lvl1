@@ -1,10 +1,10 @@
 #!env python
 
-from brain_games.games.even import start_even
+from brain_games.games.calc import start_calc
 
 
 def main():
-    start_even()
+    start_calc()
 
 
 if __name__ == '__main__':
