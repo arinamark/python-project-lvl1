@@ -2,8 +2,7 @@
 
 
 from random import randint
-from brain_games.games.stages import start_game
-from brain_games.games.stages import show_loose, show_win, show_correct_stage
+from brain_games.games.stages import stages_logic, start_game
 from brain_games.games.questions import ask_question, get_answer
 
 
@@ -28,26 +27,20 @@ def correct_answer(num):
     return 'no'
 
 
-def game_stage(params):
-    (step, name) = params
+def even_ask():
     number = gen_number(100)
     c_answer = correct_answer(number)
     ask_question(number)
-    answers = (get_answer(), c_answer)
-    if if_answer(answers):
-        if(step == 3):
-            show_win(name)
-        else:
-            show_correct_stage()
-            params1 = (step + 1, name)
-            game_stage(params1)
-    else:
-        params2 = (answers, name)
-        show_loose(params2)
+    answer = get_answer()
+    return (answer, c_answer)
+
+
+def stage_even(name):
+    relations = (name, 'even')
+    stages_logic(relations)
 
 
 def start_even():
     rule = 'Answer "yes" if the number is even, otherwise answer "no".'
     name = start_game(rule)
-    params = (1, name)
-    game_stage(params)
+    stage_even(name)
