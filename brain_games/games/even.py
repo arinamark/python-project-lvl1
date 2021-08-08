@@ -2,8 +2,9 @@
 
 
 from random import randint
-import prompt
-from brain_games.cli import set_username
+from brain_games.games.stages import start_game
+from brain_games.games.stages import show_loose, show_win, show_correct_stage
+from brain_games.games.questions import ask_question, get_answer
 
 
 def if_even(number):
@@ -21,30 +22,6 @@ def gen_number(n):
     return randint(1, n)
 
 
-def get_answer():
-    return prompt.string('Your answer: ').rstrip().lower()
-
-
-def show_number(n):
-    print('Question: {}'.format(n))
-
-
-def show_win(name):
-    print('Congratulations, {}!'.format(name))
-
-
-def show_correct_stage():
-    print('Correct!')
-
-
-def show_loose(strings):
-    (answers, name) = strings
-    center_part = ' is wrong answer ;(. Correct answer was '
-    st = '"{}"{}"{}".'.format(answers[0], center_part, answers[1])
-    print(st)
-    print('Let\'s try again, {}!'.format(name))
-
-
 def correct_answer(num):
     if if_even(num):
         return 'yes'
@@ -55,7 +32,7 @@ def game_stage(params):
     (step, name) = params
     number = gen_number(100)
     c_answer = correct_answer(number)
-    show_number(number)
+    ask_question(number)
     answers = (get_answer(), c_answer)
     if if_answer(answers):
         if(step == 3):
@@ -67,12 +44,10 @@ def game_stage(params):
     else:
         params2 = (answers, name)
         show_loose(params2)
-        game_stage((1, name))
 
 
-def start_game():
-    name = set_username()
-    print('Hello, {}!'.format(name))
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+def start_even():
+    rule = 'Answer "yes" if the number is even, otherwise answer "no".'
+    name = start_game(rule)
     params = (1, name)
     game_stage(params)
