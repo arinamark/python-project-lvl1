@@ -1,6 +1,5 @@
+from brain_games.games.gen_questions import gen_questions
 from brain_games.cli import show_welcome, set_username
-from brain_games.games.calc import calc_ask
-from brain_games.games.even import even_ask
 
 
 def show_win(name):
@@ -38,10 +37,7 @@ def stages_logic(strings):
     (name, game) = strings
     step = 1
     while(step <= 3):
-        if (game == 'calc'):
-            (answer, right) = calc_ask()
-        if (game == 'even'):
-            (answer, right) = even_ask()
+        (answer, right) = gen_questions(game)
         relations = (answer, right, name, step)
         step = stage_game(relations)
 
