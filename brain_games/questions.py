@@ -18,15 +18,15 @@ def ask_question(st):
 
 def gen_questions(game):
     if (game == 'calc'):
-        (string, right) = ask_calc()
+        (right, string) = ask_calc()
     if (game == 'even'):
-        (string, right) = ask_even()
+        (right, string) = ask_even()
     if (game == 'gcd'):
-        (string, right) = ask_gcd()
+        (right, string) = ask_gcd()
     if (game == 'progression'):
-        (string, right) = ask_progression()
+        (right, string) = ask_progression()
     if (game == 'prime'):
-        (string, right) = ask_expression()
+        (right, string) = ask_expression()
     ask_question(string)
     answer = get_answer()
     return (answer, right)
