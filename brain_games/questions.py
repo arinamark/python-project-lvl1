@@ -29,4 +29,4 @@ def gen_questions(game):
         (right, string) = ask_expression()
     ask_question(string)
     answer = get_answer()
-    return (answer, right)
+    return (answer, str(right))
