@@ -1,6 +1,6 @@
 #!env python
 from random import randint
-from brain_games.games.questions import ask_question, get_answer
+from brain_games.questions import ask_question, get_answer
 
 
 def get_result(params):

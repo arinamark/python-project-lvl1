@@ -1,4 +1,4 @@
-from brain_games.games.gen_questions import gen_questions
+from brain_games.gen_questions import gen_questions
 from brain_games.cli import welcome_user
 
 
@@ -55,6 +55,8 @@ def barain_start(game):
         rule = 'Answer "yes" if the number is even, otherwise answer "no".'
     if (game == 'gcd'):
         rule = 'Find the greatest common divisor of given numbers.'
+    if (game == 'progression'):
+        rule = 'What number is missing in the progression?'
     name = start_game(rule)
     relations = (name, game)
     stages_logic(relations)

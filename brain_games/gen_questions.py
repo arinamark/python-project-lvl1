@@ -1,6 +1,7 @@
 from brain_games.games.even import even_ask
 from brain_games.games.calc import calc_ask
 from brain_games.games.gcd import gcd_ask
+from brain_games.games.progression import progression_ask
 
 
 def gen_questions(game):
@@ -10,4 +11,6 @@ def gen_questions(game):
         (answer, right) = even_ask()
     if (game == 'gcd'):
         (answer, right) = gcd_ask()
+    if (game == 'progression'):
+        (answer, right) = progression_ask()
     return (answer, right)
