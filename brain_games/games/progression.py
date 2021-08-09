@@ -1,6 +1,5 @@
 #!env python
 from random import randint
-from brain_games.questions import ask_question, get_answer
 
 
 def gen_expression():
@@ -21,10 +20,3 @@ def gen_expression():
         element = element + p_step
     string = ' '.join(progression)
     return (result, string)
-
-
-def progression_ask():
-    (result, string) = gen_expression()
-    ask_question(string)
-    answer = get_answer()
-    return (answer, str(result))

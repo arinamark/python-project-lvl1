@@ -1,7 +1,6 @@
 #!env python
 from random import randint
 from math import gcd
-from brain_games.questions import ask_question, get_answer
 
 
 def gen_expression():
@@ -10,10 +9,3 @@ def gen_expression():
     result = gcd(a, b)
     string = '{} {}'.format(str(a), str(b))
     return (result, string)
-
-
-def gcd_ask():
-    (result, string) = gen_expression()
-    ask_question(string)
-    answer = get_answer()
-    return (answer, str(result))

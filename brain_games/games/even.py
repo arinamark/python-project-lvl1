@@ -1,14 +1,11 @@
 #!env python
 from random import randint
-from brain_games.questions import ask_question, get_answer
 
 
-def even_ask():
+def gen_expression():
     number = randint(1, 100)
     if(number % 2 == 0):
-        c_answer = 'yes'
+        result = 'yes'
     else:
-        c_answer = 'no'
-    ask_question(str(number))
-    answer = get_answer()
-    return (answer, c_answer)
+        result = 'no'
+    return (result, str(number))

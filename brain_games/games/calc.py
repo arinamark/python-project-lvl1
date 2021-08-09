@@ -1,6 +1,5 @@
 #!env python
 from random import randint
-from brain_games.questions import ask_question, get_answer
 
 
 def get_result(params):
@@ -25,10 +24,3 @@ def gen_expression():
     exp = ('+', '-', '*')[randint(0, 2)]
     params = (a, b, exp)
     return get_result(params)
-
-
-def calc_ask():
-    (result, string) = gen_expression()
-    ask_question(string)
-    answer = get_answer()
-    return (answer, str(result))

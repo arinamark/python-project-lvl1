@@ -1,4 +1,4 @@
-from brain_games.gen_questions import gen_questions
+from brain_games.questions import gen_questions
 from brain_games.cli import welcome_user
 
 
@@ -57,6 +57,8 @@ def barain_start(game):
         rule = 'Find the greatest common divisor of given numbers.'
     if (game == 'progression'):
         rule = 'What number is missing in the progression?'
+    if (game == 'prime'):
+        rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     name = start_game(rule)
     relations = (name, game)
     stages_logic(relations)
