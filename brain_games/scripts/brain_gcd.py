@@ -1,10 +1,10 @@
 #!env python
 
-from brain_games.games.gcd import start_gcd
+from brain_games.games.stages import barain_start
 
 
 def main():
-    start_gcd()
+    barain_start('gcd')
 
 
 if __name__ == '__main__':

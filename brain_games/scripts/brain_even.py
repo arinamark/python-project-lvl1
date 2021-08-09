@@ -1,10 +1,10 @@
 #!env python
 
-from brain_games.games.even import start_even
+from brain_games.games.stages import barain_start
 
 
 def main():
-    start_even()
+    barain_start('even')
 
 
 if __name__ == '__main__':

@@ -1,13 +1,14 @@
 #!env python
-from brain_games.games.stages import stages_logic, start_game
+from random import randint
+from brain_games.games.questions import ask_question, get_answer
 
 
-def stage_even(name):
-    relations = (name, 'even')
-    stages_logic(relations)
-
-
-def start_even():
-    rule = 'Answer "yes" if the number is even, otherwise answer "no".'
-    name = start_game(rule)
-    stage_even(name)
+def even_ask():
+    number = randint(1, 100)
+    if(number % 2 == 0):
+        c_answer = 'yes'
+    else:
+        c_answer = 'no'
+    ask_question(str(number))
+    answer = get_answer()
+    return (answer, c_answer)

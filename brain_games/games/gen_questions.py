@@ -1,6 +1,6 @@
-from brain_games.games.question_even import even_ask
-from brain_games.games.question_calc import calc_ask
-from brain_games.games.question_gcd import gcd_ask
+from brain_games.games.even import even_ask
+from brain_games.games.calc import calc_ask
+from brain_games.games.gcd import gcd_ask
 
 
 def gen_questions(game):

@@ -46,3 +46,15 @@ def start_game(rule):
     name = welcome_user()
     print(rule)
     return name
+
+
+def barain_start(game):
+    if (game == 'calc'):
+        rule = 'What is the result of the expression?'
+    if (game == 'even'):
+        rule = 'Answer "yes" if the number is even, otherwise answer "no".'
+    if (game == 'gcd'):
+        rule = 'Find the greatest common divisor of given numbers.'
+    name = start_game(rule)
+    relations = (name, game)
+    stages_logic(relations)
