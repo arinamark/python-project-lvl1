@@ -13,7 +13,7 @@ def gen_expression():
     while (i < p_lenth):
         if (i == p_index):
             result = element
-            progression.append('...')
+            progression.append('..')
         else:
             progression.append(str(element))
         i = i + 1
