@@ -17,7 +17,7 @@ def gen_questions(func):
     print('{} {}'.format(QUESTION_LABEL, string))
     answer = prompt.string(ANSWER_LABEL).rstrip().lower()
     return (str(answer), str(right))
-  
+
 
 def show_loose(strings):
     (answers, name) = strings
