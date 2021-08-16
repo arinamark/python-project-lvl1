@@ -3,6 +3,7 @@ from random import randint
 
 
 PRIMITIVE = [1, 2]
+GEN_PRIME = 100
 
 
 def is_prime(num):
@@ -17,6 +18,6 @@ def is_prime(num):
 
 
 def gen_expression():
-    a = randint(1, 100)
+    a = randint(1, GEN_PRIME)
     result = is_prime(a)
     return (result, str(a))
