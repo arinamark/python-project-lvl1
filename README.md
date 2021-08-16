@@ -1,5 +1,6 @@
 Brain-even test video:
-<script id="asciicast-V4OiY06tVWI4UGTUv8yCZGo6d" src="https://asciinema.org/a/V4OiY06tVWI4UGTUv8yCZGo6d.js" async></script>
+[![asciicast](https://asciinema.org/a/V4OiY06tVWI4UGTUv8yCZGo6d.svg)](https://asciinema.org/a/V4OiY06tVWI4UGTUv8yCZGo6d)
+
  <a href="https://asciinema.org/a/iyN3faxMtZ7mg3AXJmeywqdLW" target="_blank">here</a>
 ***
 Brain-calc test video: <a href="https://asciinema.org/a/LYk1hsEfTB9rp9KHZlZqzyLzq" target="_blank">here</a>
