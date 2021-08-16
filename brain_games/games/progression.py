@@ -2,10 +2,16 @@
 from random import randint
 
 
+GEN_P_LENGTH_MIN = 5
+GEN_P_LENGTH_MAX = 10
+GEN_START_NUMBER = 10
+GEN_STEP = 10
+
+
 def gen_expression():
-    p_lenth = randint(5, 10)
-    p_start = randint(1, 10)
-    p_step = randint(1, 10)
+    p_lenth = randint(GEN_P_LENGTH_MIN, GEN_P_LENGTH_MAX)
+    p_start = randint(1, GEN_START_NUMBER)
+    p_step = randint(1, GEN_STEP)
     p_index = randint(0, p_lenth - 1)
     progression = []
     i = 0
