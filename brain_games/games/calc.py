@@ -2,6 +2,9 @@
 from random import randint
 
 
+GEN_MAX = 20
+
+
 def get_result(params):
     (a, b, exp) = params
     if(exp == '+'):
@@ -19,8 +22,8 @@ def get_result(params):
 
 
 def gen_expression():
-    a = randint(0, 20)
-    b = randint(0, 20)
+    a = randint(0, GEN_MAX)
+    b = randint(0, GEN_MAX)
     exp = ('+', '-', '*')[randint(0, 2)]
     params = (a, b, exp)
     return get_result(params)
