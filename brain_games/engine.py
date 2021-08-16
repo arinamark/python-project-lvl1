@@ -17,6 +17,7 @@ def gen_questions(func):
     answer = get_answer()
     return (str(answer), str(right))
 
+
 def show_win(name):
     print('Congratulations, {}!'.format(name))
 

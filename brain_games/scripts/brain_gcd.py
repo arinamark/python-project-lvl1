@@ -5,7 +5,8 @@ from brain_games.games.gcd import gen_expression
 
 
 def main():
-    brain_start('Find the greatest common divisor of given numbers.', gen_expression)
+    rule = 'Find the greatest common divisor of given numbers.'
+    brain_start(rule, gen_expression)
 
 
 if __name__ == '__main__':

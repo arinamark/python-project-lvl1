@@ -5,7 +5,8 @@ from brain_games.games.even import gen_expression
 
 
 def main():
-    brain_start('Answer "yes" if the number is even, otherwise answer "no".', gen_expression)
+    rule = 'Answer "yes" if the number is even, otherwise answer "no".'
+    brain_start(rule, gen_expression)
 
 
 if __name__ == '__main__':
