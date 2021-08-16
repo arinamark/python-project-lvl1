@@ -2,16 +2,18 @@
 from random import randint
 
 
+PRIMITIVE = [1, 2]
+
+
 def is_prime(num):
-    if ((num == 1) or (num == 2)):
+    if num in PRIMITIVE:
         return 'yes'
-    else:
-        dev = 2
-        while(dev < num):
-            if (num % dev == 0):
-                return 'no'
-            dev = dev + 1
-        return 'yes'
+    dev = 2
+    while dev < num:
+        if num % dev == 0:
+            return 'no'
+        dev += 1
+    return 'yes'
 
 
 def gen_expression():
