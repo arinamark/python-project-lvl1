@@ -1,6 +1,21 @@
-from brain_games.questions import gen_questions
+#!env python
 from brain_games.cli import welcome_user
+import prompt
 
+
+def get_answer():
+    return prompt.string('Your answer: ').rstrip().lower()
+
+
+def ask_question(st):
+    print('Question: {}'.format(st))
+
+
+def gen_questions(func):
+    (right, string) = func()
+    ask_question(string)
+    answer = get_answer()
+    return (str(answer), str(right))
 
 def show_win(name):
     print('Congratulations, {}!'.format(name))
@@ -48,17 +63,7 @@ def start_game(rule):
     return name
 
 
-def barain_start(game):
-    if (game == 'calc'):
-        rule = 'What is the result of the expression?'
-    if (game == 'even'):
-        rule = 'Answer "yes" if the number is even, otherwise answer "no".'
-    if (game == 'gcd'):
-        rule = 'Find the greatest common divisor of given numbers.'
-    if (game == 'progression'):
-        rule = 'What number is missing in the progression?'
-    if (game == 'prime'):
-        rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+def brain_start(rule, func):
     name = start_game(rule)
-    relations = (name, game)
+    relations = (name, func)
     stages_logic(relations)

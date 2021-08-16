@@ -1,10 +1,11 @@
 #!env python
 
-from brain_games.stages import barain_start
+from brain_games.engine import brain_start
+from brain_games.games.progression import gen_expression
 
 
 def main():
-    barain_start('progression')
+    brain_start('What number is missing in the progression?', gen_expression)
 
 
 if __name__ == '__main__':
