@@ -1,5 +1,5 @@
 Brain-even test video:
-[![asciicast](https://asciinema.org/a/113463.png)](asciinema/430714)
+[![asciicast](https://asciinema.org/a/113463.png)](/asciinema/430714)
  <a href="https://asciinema.org/a/iyN3faxMtZ7mg3AXJmeywqdLW" target="_blank">here</a>
 ***
 Brain-calc test video: <a href="https://asciinema.org/a/LYk1hsEfTB9rp9KHZlZqzyLzq" target="_blank">here</a>
