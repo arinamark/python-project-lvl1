@@ -3,17 +3,17 @@
 <a href="https://codeclimate.com/github/arinamark/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/80b83d2e35a5b22026f0/maintainability" /></a>
 [![Lint](https://github.com/arinamark/python-project-lvl1/actions/workflows/lint.yml/badge.svg)](https://github.com/arinamark/python-project-lvl1/actions/workflows/lint.yml)
 
-## Brain-even test video:
+### Brain-even test video:
 [![asciicast](https://asciinema.org/a/V4OiY06tVWI4UGTUv8yCZGo6d.svg)](https://asciinema.org/a/V4OiY06tVWI4UGTUv8yCZGo6d)
 
-## Brain-calc test video:
+### Brain-calc test video:
 [![asciicast](https://asciinema.org/a/vH6iX9YkUzqvRChhMUv2X8o4U.svg)](https://asciinema.org/a/vH6iX9YkUzqvRChhMUv2X8o4U)
 
-## Brain-gcd test video:
-<a href="https://asciinema.org/a/XhoM8N6cLn0SETXDNt8F85jmM" target="_blank">here</a>
+### Brain-gcd test video:
+[![asciicast](https://asciinema.org/a/SqWrC1nhDPmy9B2ifG274wpbX.svg)](https://asciinema.org/a/SqWrC1nhDPmy9B2ifG274wpbX)
 
-## Brain-progression test video:
+### Brain-progression test video:
 <a href="https://asciinema.org/a/mynbK9KDACo680KasbCa0DEt3" target="_blank">here</a>
 
-## Brain-prime test video:
+### Brain-prime test video:
 <a href="https://asciinema.org/a/3Mw5T7RNRzyxOIjjxVO8vHvBA" target="_blank">here</a>
