@@ -16,4 +16,4 @@
 [![asciicast](https://asciinema.org/a/NV7Tb8tCqNi8wf1SzgbeUrY35.svg)](https://asciinema.org/a/NV7Tb8tCqNi8wf1SzgbeUrY35)
 
 ### Brain-prime test video:
-<a href="https://asciinema.org/a/3Mw5T7RNRzyxOIjjxVO8vHvBA" target="_blank">here</a>
+[![asciicast](https://asciinema.org/a/9Zj1qBmB9FcNGumGf6rSuRqsX.svg)](https://asciinema.org/a/9Zj1qBmB9FcNGumGf6rSuRqsX)
