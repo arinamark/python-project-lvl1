@@ -10,5 +10,5 @@ Brain-prime test video: <a href="https://asciinema.org/a/3Mw5T7RNRzyxOIjjxVO8vHv
 ***
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/arinamark/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/arinamark/python-project-lvl1/actions)
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+<a href="https://codeclimate.com/github/arinamark/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/80b83d2e35a5b22026f0/maintainability" /></a>
 [![Lint](https://github.com/arinamark/python-project-lvl1/actions/workflows/lint.yml/badge.svg)](https://github.com/arinamark/python-project-lvl1/actions/workflows/lint.yml)
