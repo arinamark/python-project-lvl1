@@ -1,8 +1,12 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.6.2"
-description = ""
+description = "Brain games whith numbers."
 authors = ["marinarolla <averyanova.m@gmail.com>"]
+repository = "git@github.com:arinamark/python-project-lvl1.git"
+classifiers = [
+  Programming Language :: Python :: 3
+]
 packages = [
   { include = "brain_games" },
 ]
