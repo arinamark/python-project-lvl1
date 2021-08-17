@@ -5,7 +5,10 @@ description = "Brain games whith numbers."
 authors = ["marinarolla <averyanova.m@gmail.com>"]
 repository = "git@github.com:arinamark/python-project-lvl1.git"
 classifiers = [
-  "Programming Language :: Python :: 3"
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Games/Entertaiment :: Puzzle Games",
+  "Environment :: Console"
 ]
 packages = [
   { include = "brain_games" },
