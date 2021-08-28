@@ -6,6 +6,7 @@ GEN_P_LENGTH_MIN = 5
 GEN_P_LENGTH_MAX = 10
 GEN_START_NUMBER = 10
 GEN_STEP = 10
+rule = 'What number is missing in the progression?'
 
 
 def gen_expression():

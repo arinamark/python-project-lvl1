@@ -3,10 +3,11 @@ from random import randint
 
 
 PRIMITIVE = [1, 2]
-GEN_PRIME = 100
+MAX_INT_FOR_RANDOM = 100
+rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime(num):
+def prime(num):
     if num in PRIMITIVE:
         return 'yes'
     dev = 2
@@ -18,6 +19,6 @@ def is_prime(num):
 
 
 def gen_expression():
-    a = randint(1, GEN_PRIME)
-    result = is_prime(a)
+    a = randint(1, MAX_INT_FOR_RANDOM)
+    result = prime(a)
     return (result, str(a))
