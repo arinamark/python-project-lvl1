@@ -9,7 +9,7 @@ rule = 'Answer "yes" if the number is even, otherwise answer "no".'
 def gen_expression():
     number = randint(1, MAX_NUMBER_FOR_RANDOM)
     if(number % 2 == 0):
-        result = 'yes'
+        answer = 'yes'
     else:
-        result = 'no'
-    return (result, str(number))
+        answer = 'no'
+    return (answer, str(number))

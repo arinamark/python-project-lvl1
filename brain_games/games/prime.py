@@ -20,5 +20,5 @@ def prime(num):
 
 def gen_expression():
     a = randint(1, MAX_INT_FOR_RANDOM)
-    result = prime(a)
-    return (result, str(a))
+    answer = prime(a)
+    return (answer, str(a))
