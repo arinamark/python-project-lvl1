@@ -21,7 +21,7 @@ def progression_generate():
     length = randint(PROGRESSION_LENGTH_MIN, PROGRESSIN_LENGTH_MAX)
     start = randint(1, START_NUMBER)
     step = randint(1, STEP)
-    end = start + step*length
+    end = start + step * length
     return [*range(start, end, step)]
 
 
