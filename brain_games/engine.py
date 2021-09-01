@@ -3,19 +3,19 @@ from brain_games.cli import welcome_user
 import prompt
 
 
-WIN_STEP = 3
+LAST_STEP = 3
 
 
 def brain_start(rule, game_function):
     name = welcome_user()
     print(rule)
     step = 1
-    while(step <= WIN_STEP):
+    while(step <= LAST_STEP):
         (right, expression) = game_function()
         print('Question: {}'.format(expression))
         answer = prompt.string('Your answer: ').rstrip().lower()
         if (answer == right):
-            if(step == WIN_STEP):
+            if(step == LAST_STEP):
                 print('Congratulations, {}!'.format(name))
             else:
                 print('Correct!')
@@ -24,5 +24,5 @@ def brain_start(rule, game_function):
             st = '{} {} {}.'.format(answer, loose_string, right)
             print(st)
             print('Let\'s try again, {}!'.format(name))
-            step = WIN_STEP
+            step = LAST_STEP
         step += 1
