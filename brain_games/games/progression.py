@@ -14,7 +14,7 @@ def gen_expression():
     answer_index = randint(0, len(progression) - 1)
     answer = progression[answer_index]
     expression = expression_init(progression, answer_index)
-    return (answer, expression)
+    return (str(answer), expression)
 
 
 def progression_generate():

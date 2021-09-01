@@ -12,4 +12,4 @@ def gen_expression():
     b = randint(0, MAX_INT_FOR_RANDOM)
     answer = gcd(a, b)
     expression = '{} {}'.format(str(a), str(b))
-    return (answer, expression)
+    return (str(answer), expression)

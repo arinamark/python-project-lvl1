@@ -29,16 +29,16 @@ def get_correct_answer(expression):
 def add(a, b):
     expression = '{} + {}'.format(str(a), str(b))
     answer = a + b
-    return (answer, expression)
+    return (str(answer), expression)
 
 
 def dev(a, b):
     expression = '{} - {}'.format(str(a), str(b))
     answer = a - b
-    return (answer, expression)
+    return (str(answer), expression)
 
 
 def mul(a, b):
     expression = '{} * {}'.format(str(a), str(b))
     answer = a * b
-    return (answer, expression)
+    return (str(answer), expression)
