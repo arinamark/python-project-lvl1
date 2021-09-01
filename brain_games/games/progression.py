@@ -9,11 +9,11 @@ STEP = 10
 rule = 'What number is missing in the progression?'
 
 
-def gen_expression():
+def gen_game_step():
     progression = progression_generate()
     answer_index = randint(0, len(progression) - 1)
     answer = progression[answer_index]
-    expression = expression_init(progression, answer_index)
+    expression = str_progression(progression, answer_index)
     return (str(answer), expression)
 
 
@@ -25,7 +25,7 @@ def progression_generate():
     return [*range(start, end, step)]
 
 
-def expression_init(prorgression, index):
+def str_progression(prorgression, index):
     expression = []
     for i, element in enumerate(prorgression):
         if i == index:
