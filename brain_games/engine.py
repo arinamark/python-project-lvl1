@@ -20,7 +20,8 @@ def brain_start(rule, game_function):
             else:
                 print('Correct!')
         else:
-            st = '{} is wrong answer ;(. Correct answer was {}.'.format(answer, right)
+            loose_string = 'is wrong answer ;(. Correct answer was'
+            st = '{} {} {}.'.format(answer, loose_string, right)
             print(st)
             print('Let\'s try again, {}!'.format(name))
             step = WIN_STEP
