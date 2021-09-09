@@ -11,7 +11,7 @@ def brain_start(rule, game_function):
     print(rule)
     step = 1
     while step <= LAST_STEP:
-        (right, expression) = game_function()
+        right, expression = game_function()
         print('Question: {}'.format(expression))
         answer = prompt.string('Your answer: ').rstrip().lower()
         if answer == right:
