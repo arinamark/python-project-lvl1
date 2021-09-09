@@ -15,30 +15,30 @@ def gen_game_step():
 
 
 def get_step(expression):
-    (a, b, operator) = expression
-    if(operator == '+'):
+    a, b, operator = expression
+    if operator == '+':
         return get_step_add(a, b)
-    if(operator == '-'):
+    if operator == '-':
         argument1 = max(a, b)
         argument2 = min(a, b)
         return get_step_sub(argument1, argument2)
-    if(operator == '*'):
+    if operator == '*':
         return get_step_mul(a, b)
 
 
 def get_step_add(a, b):
     expression = '{} + {}'.format(str(a), str(b))
     answer = a + b
-    return (str(answer), expression)
+    return str(answer), expression
 
 
 def get_step_sub(a, b):
     expression = '{} - {}'.format(str(a), str(b))
     answer = a - b
-    return (str(answer), expression)
+    return str(answer), expression
 
 
 def get_step_mul(a, b):
     expression = '{} * {}'.format(str(a), str(b))
     answer = a * b
-    return (str(answer), expression)
+    return str(answer), expression
