@@ -20,8 +20,7 @@ def get_step(question):
     if operator == '+':
         operation = add
     if operator == '-':
-        a = max(a, b)
-        b = min(a, b)
+        a, b = max(a, b), min(a, b)
         operation = sub
     if operator == '*':
         operation = mul
