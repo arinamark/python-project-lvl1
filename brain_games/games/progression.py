@@ -14,7 +14,7 @@ def gen_game_step():
     answer_index = randint(0, len(progression) - 1)
     answer = progression[answer_index]
     expression = str_progression(progression, answer_index)
-    return (str(answer), expression)
+    return str(answer), expression
 
 
 def progression_generate():
