@@ -13,7 +13,7 @@ def gen_game_step():
         answer = 'yes'
     else:
         answer = 'no'
-    return (answer, str(a))
+    return answer, str(a)
 
 
 def is_prime(num):
