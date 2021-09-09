@@ -7,9 +7,9 @@ rule = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def gen_game_step():
-    number = randint(1, MAX_NUMBER_FOR_RANDOM)
-    if number % 2 == 0:
+    question = randint(1, MAX_NUMBER_FOR_RANDOM)
+    if question % 2 == 0:
         answer = 'yes'
     else:
         answer = 'no'
-    return answer, str(number)
+    return answer, str(question)

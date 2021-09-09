@@ -1,11 +1,11 @@
 #!env python
 
-from brain_games.engine import brain_start
+from brain_games.engine import game
 from brain_games.games.prime import gen_game_step, rule
 
 
 def main():
-    brain_start(rule, gen_game_step)
+    game(rule, gen_game_step)
 
 
 if __name__ == '__main__':

@@ -8,12 +8,12 @@ rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def gen_game_step():
-    a = randint(1, MAX_INT_FOR_RANDOM)
-    if is_prime(a):
+    question = randint(1, MAX_INT_FOR_RANDOM)
+    if is_prime(question):
         answer = 'yes'
     else:
         answer = 'no'
-    return answer, str(a)
+    return answer, str(question)
 
 
 def is_prime(num):

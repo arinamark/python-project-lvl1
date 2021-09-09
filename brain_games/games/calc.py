@@ -11,12 +11,12 @@ def gen_game_step():
     a = randint(0, MAX_INT_FOR_RANDOM)
     b = randint(0, MAX_INT_FOR_RANDOM)
     operator = choice(['+', '-', '*'])
-    expression = a, b, operator
-    return get_step(expression)
+    question = a, b, operator
+    return get_step(question)
 
 
-def get_step(expression):
-    a, b, operator = expression
+def get_step(question):
+    a, b, operator = question
     if operator == '+':
         operation = add
     if operator == '-':

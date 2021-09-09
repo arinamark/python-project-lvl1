@@ -6,7 +6,7 @@ import prompt
 LAST_STEP = 3
 
 
-def brain_start(rule, game_function):
+def game(rule, game_function):
     name = welcome_user()
     print(rule)
     step = 1

@@ -11,5 +11,5 @@ def gen_game_step():
     a = randint(0, MAX_INT_FOR_RANDOM)
     b = randint(0, MAX_INT_FOR_RANDOM)
     answer = gcd(a, b)
-    expression = '{} {}'.format(str(a), str(b))
-    return str(answer), expression
+    question = '{} {}'.format(str(a), str(b))
+    return str(answer), question
